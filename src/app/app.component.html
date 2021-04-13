@@ -42,3 +42,21 @@
    <button  (click)="clearStringValue()" [disabled]="stringValue === ''" class="btn btn-primary" >reset text</button>
   {{stringValue }}
 </div>
+<br/>
+  <hr/><br/>
+<div class="container mb-5">
+  <h1>Task 4- *ngIf</h1>
+  
+   <button  (click)="hide = !hide" class="btn btn-primary" >Show Text</button>
+   {{hide}}
+  <p *ngIf="hide == true">{{task4 }}</p>
+</div>
+<br/>
+  <hr/><br/>
+<div class="container mb-5">
+  <h1>Task 5- ngClass and ngStyle</h1>
+  
+   <button (click)="hide = !hide" class="btn btn-primary" >Toggle color</button>
+   {{hide}}
+  <p [ngStyle]="{background: 'blue'}" [ngClass]="{'colorOP':hide}" class="p-2 my-3">Change color using ngClass and style using ngStyle</p>
+</div>

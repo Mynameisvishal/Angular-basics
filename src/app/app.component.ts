@@ -10,6 +10,8 @@ export class AppComponent {
   eatMore = true;
   serverName=" No Server Created";
   stringValue="";
+  task4='This is done using ngIf';
+  hide=false;
 
   onUpdateValue(event:any){
     this.serverName=event.target.value;
