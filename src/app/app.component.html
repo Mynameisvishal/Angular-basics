@@ -3,3 +3,42 @@
 
 <hr>
 <app-servers></app-servers>
+<br><br><br>
+<br><br><br>
+
+<h1>Task 1</h1>
+<div class="container">
+  <h2>Have to Create New component manually and through cli</h2>
+  <p>Things to keep in mind before starting manually</p>
+  <ol>
+    <li>Create folder name same as component name</li>
+    <li>Create a typescript file first and complete the component info in it</li>
+    <li>Don't forget to import in app Module</li>
+  </ol>
+  {{eatMore}}
+  <input type="radio" name="" value="SUCCESS" id="">
+  <p class="info_sucess">You have successfully completed the task.</p>
+  <input type="radio" name="" value="Failed" id="">
+  <p class="info_failed">You have failed the task.</p>
+  <button class="btn btn-success" [disabled]="eatMore">Task Completed</button>
+</div>
+<br>
+<hr>
+<br>
+<div class="container">
+  <h1>Task 2</h1>
+  <!-- (onChange)='onUpdateValue($event)' -->
+  <input type="text"
+  (input)='onUpdateValue($event)'
+   name="" id="">
+  {{serverName }}
+</div>
+<div class="container">
+  <h1>Task 3</h1>
+  <!-- (onChange)='onUpdateValue($event)' -->
+  <input type="text"
+  (input)='changeStringValue($event)'
+   name="" id="">
+   <button  (click)="clearStringValue()" [disabled]="stringValue === ''" class="btn btn-primary" >reset text</button>
+  {{stringValue }}
+</div>

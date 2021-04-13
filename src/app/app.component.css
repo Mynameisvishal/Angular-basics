@@ -1,0 +1,13 @@
+.info_sucess{
+    padding: 20px;
+    background: rgba(192, 72, 72, 0.582);
+    border: 1px solid red;
+    
+}
+.info_failed{
+    padding: 20px;
+    background: rgba(116, 192, 72, 0.582);
+    border: 1px solid green;
+    width: fit-content;
+    
+}
